@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Vinyl&family=Unbounded&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(240, 237, 237);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 0.2);
+    position: fixed;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    z-index: 1;
+    border-radius: 25px;;
+}
+nav {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a {
+    color: rgb(49, 46, 46);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+a:hover {
+    color: royalblue;
+}
+p {
+    text-align: center;
+}
+#about {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about p { 
+    font-size: 28px;
+    display: block;
+    color: #ffffff;
+    width: 60%;
+    font-family: 'Unbounded', cursive;
+}
+#about a {
+    background-color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    margin-top: 20px;
+    box-shadow: 0 12px 24px rgb(0 0 0 / 0.2);
+}
+#about a:hover {
+    background-color: royalblue;
+    color: #ffffff;
+    border-color: royalblue;
+}
+p#title-name {
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 64px;
+}
+#typed-text {
+    margin-bottom: 40px;
+}
+#portfolio {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 100px
+}
+#portfolio .box {
+    width: 30%;
+    background-color: #ffffff;
+    border: 1px solid #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0 5px 24px rgb(0 0 0 / 0.2);
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#portfolio .box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 5px;
+}
+#portfolio .box p {
+    padding: 10px
+}
+#portfolio .box a {
+    background-color: royalblue;
+    color: #ffffff;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid royalblue;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: 0 5px 24px rgb(0 0 0 / 0.2);
+}
+#portfolio .box:hover {
+    transform: scale(1.05);
+}
+#portfolio .box a:hover {
+    background-color: forestgreen;
+    border-color: forestgreen;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@media(max-width: 900px) {
+    header {
+        width: 90%;
+        margin-left: 5%;
+    }
+    p#title-name {
+        font-size: 48px;
+    }
+    a {
+        font-size: 16px;
+    }
+    #about p {
+        width: 90%;
+    }
+}

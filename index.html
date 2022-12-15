@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Developer Reza</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+
+        <div id="about">
+            <p id="title-name">Hi, I'm Reza!</p>
+            <p id="typed-text"></p>
+            <a href="#portfolio">CHECK MY WORKS</a>
+        </div>
+
+        <div id="portfolio">
+            <div class="box">
+                <img src="resources/phinanze.png">
+                <p>A desktop application for finance management and budgeting.</p>
+                <a href="#">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/randsbook.png">
+                <p>A responsive web-based personal library application with community feature.</p>
+                <a href="#">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/uwcfos.png">
+                <p>All-in-one web-based Campus food ordering system with admin, employee, and customer specific features.</p>
+                <a href="#">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/cms.png">
+                <p>A web-based content management system for student clubs.</p>
+                <a href="#">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/phinAPI.png">
+                <p>A pack of REST APIs for supporting device-independent data access by the finance management desktop app.</p>
+                <a href="#">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/cms_temp.png">
+                <p>One of the templates provided by the content management system.</p>
+                <a href="#">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/ers.png">
+                <p>A simple console-based employee management system built with C.</p>
+                <a href="#">Check Details</a>
+            </div>
+        </div>
+
+        <div id="contact">
+
+        </div>
+
+        <footer>
+            <p>&copy; All Rights Reserved</p>
+        </footer>
+    </body>
+</html>
+<script>
+let i = 0;
+let text = 'I am a developer with full stack multi-platform (web, desktop, cross-platform) development expereince.';
+let interval = 65;
+window.onload = typeWriter();
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("typed-text").textContent += text.charAt(i++);
+        setTimeout(typeWriter, interval);
+    }
+}
+</script>
