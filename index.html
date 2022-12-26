@@ -2,14 +2,19 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>Developer Reza</title>
+        <meta property="og:title" content="Reza H. Portfolio">
+        <meta property="og:site_name" content="Rezahdev.com">
+        <meta property="og:url" content="https://rezahdev.com">
+        <meta property="og:description" content="Reza H. Personal Portfolio Site">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://rezahdev/resources/og.png">
+        <title>Portfolio Site</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             <nav>
-                <a href="#about">ABOUT</a>
+                <a id="about_link" href="#about">ABOUT</a>
                 <a href="#portfolio">PORTFOLIO</a>
                 <a href="#contact">CONTACT</a>
             </nav>
@@ -25,52 +30,71 @@
             <div class="box">
                 <img src="resources/phinanze.png">
                 <p>A desktop application for finance management and budgeting.</p>
-                <a href="#">Check Details</a>
+                <a target="_blank" href="https://github.com/rezahdev/phinanze">Check Details</a>
             </div>
             <div class="box">
                 <img src="resources/randsbook.png">
                 <p>A responsive web-based personal library application with community feature.</p>
-                <a href="#">Check Details</a>
+                <a target="_blank" href="https://github.com/rezahdev/randsbook">Check Details</a>
             </div>
             <div class="box">
-                <img src="resources/uwcfos.png">
-                <p>All-in-one web-based Campus food ordering system with admin, employee, and customer specific features.</p>
-                <a href="#">Check Details</a>
+                <img src="resources/mars.png">
+                <p>Desktop compatible Unity 3D FPS survival game.</p>
+                <a target="_blank" href="https://github.com/rezahdev/survivemars">Check Details</a>
             </div>
             <div class="box">
                 <img src="resources/cms.png">
                 <p>A web-based content management system for student clubs.</p>
-                <a href="#">Check Details</a>
+                <a target="_blank" href="https://github.com/rezahdev/uw_impact_cms">Check Details</a>
+            </div>
+            <div class="box">
+                <img src="resources/uwcfos.png">
+                <p>All-in-one web-based Campus food ordering system with admin, employee, and customer specific features.</p>
+                <a href="https://github.com/rezahdev/cfos">Check Details</a>
             </div>
             <div class="box">
                 <img src="resources/phinAPI.png">
-                <p>A pack of REST APIs for supporting device-independent data access by the finance management desktop app.</p>
-                <a href="#">Check Details</a>
+                <p>REST APIs for supporting device-independent data access by the Phinanze app.</p>
+                <a href="#" >Check Details</a>
             </div>
             <div class="box">
                 <img src="resources/cms_temp.png">
                 <p>One of the templates provided by the content management system.</p>
-                <a href="#">Check Details</a>
+                <a target="_blank" href="https://uwimpact.net">Check Details</a>
             </div>
             <div class="box">
                 <img src="resources/ers.png">
                 <p>A simple console-based employee management system built with C.</p>
-                <a href="#">Check Details</a>
+                <a target="_blank" href="https://github.com/rezahdev/ers">Check Details</a>
             </div>
         </div>
 
         <div id="contact">
-
+            <p>Contact</p>
+            <form>
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea placeholder="Write your message here"></textarea>
+                <button>Send</button>
+            </form>
         </div>
 
         <footer>
             <p>&copy; All Rights Reserved</p>
         </footer>
+
+        <div id="popup_box">
+            <p id="popup_title"></p>
+            <p id="popup_description"></p>
+            <img id="popup_demo" src="" />
+            <a id="project_link" href="#"></a>
+            <button onclick="closePopupBox()">Close</button>
+        </div>
     </body>
 </html>
 <script>
 let i = 0;
-let text = 'I am a developer with full stack multi-platform (web, desktop, cross-platform) development expereince.';
+let text = 'I am a full stack developer with experience in web, desktop, and cross-platform development expereince.';
 let interval = 65;
 window.onload = typeWriter();
 function typeWriter() {
@@ -79,4 +103,7 @@ function typeWriter() {
         setTimeout(typeWriter, interval);
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    about_link.click();
+})
 </script>

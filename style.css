@@ -123,14 +123,52 @@ p#title-name {
     border: 1px solid royalblue;
     border-radius: 25px;
     font-size: 16px;
-    box-shadow: 0 5px 24px rgb(0 0 0 / 0.2);
-}
-#portfolio .box:hover {
-    transform: scale(1.05);
 }
 #portfolio .box a:hover {
     background-color: forestgreen;
     border-color: forestgreen;
+}
+#contact p {
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 32px;
+}
+#contact form {
+    width: 70%;
+    margin-left: 15%;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 25px;
+}
+#contact input, textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid dimgray;
+    font-size: 16px;
+}
+#contact button {
+    background-color: royalblue;
+    border: 1px solid royalblue;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#contact button:hover {
+    background-color: forestgreen;
+    border-color: forestgreen;
+}
+footer {
+    margin-top: 40px;
+    width: 100%;
+    padding: 30px;
+    background-color: #534c4c;
+    color: #ffffff
 }
 @keyframes gradient {
     0% {
@@ -156,5 +194,12 @@ p#title-name {
     }
     #about p {
         width: 90%;
+    }
+    #portfolio .box {
+        width: 90%;
+    }
+    #contact p, #contact form {
+        width: 90%;
+        margin-left: 5%;
     }
 }
